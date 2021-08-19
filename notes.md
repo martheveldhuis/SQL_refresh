@@ -12,3 +12,14 @@
 	- '[a-d]' means a range of options
 - LIMIT can be used with an offset number first
 
+
+## Notes: data from multiple tables
+
+- INNER is optional for JOIN
+- OUTER is optional for JOIN (implicit with LEFT or RIGHT)
+	- use LEFT JOIN
+- us USING to join on equally names columns
+- use CROSS JOIN to combine e.g. all colors and all sizes
+- use UNION for combining rows with equal number of columns
+
+![Join types](joins.jpg)
