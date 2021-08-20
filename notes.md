@@ -23,3 +23,9 @@
 - use UNION for combining rows with equal number of columns
 
 ![Join types](https://github.com/martheveldhuis/SQL_refresh/blob/main/joins.png)
+
+## Notes: inserting, updating, and deleting data
+
+- VARCHAR is variable in length
+- using CREATE TABLE x AS + SELECT * does not maintain PK
+- write the SELECT subquery before the CREATE TABLE
