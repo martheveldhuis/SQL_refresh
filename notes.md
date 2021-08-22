@@ -29,3 +29,10 @@
 - VARCHAR is variable in length
 - using CREATE TABLE x AS + SELECT * does not maintain PK
 - write the SELECT subquery before the CREATE TABLE
+
+
+## Notes: summarizing data
+
+- use HAVING to filter after grouping (WHERE clause would not work)
+- HAVING only works on selected columns
+- ROLLUP only works with the actual column name, not an alias
