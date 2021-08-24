@@ -22,7 +22,7 @@
 - use CROSS JOIN to combine e.g. all colors and all sizes
 - use UNION for combining rows with equal number of columns
 
-![Join types](https://github.com/martheveldhuis/SQL_refresh/blob/main/joins.png)
+![Join types](https://github.com/martheveldhuis/SQL_refresh/blob/complex/joins.png)
 
 ## Notes: inserting, updating, and deleting data
 
