@@ -36,3 +36,14 @@
 - use HAVING to filter after grouping (WHERE clause would not work)
 - HAVING only works on selected columns
 - ROLLUP only works with the actual column name, not an alias
+
+
+## Notes: complex queries
+
+- you can use both subqueries or joins depending on readability
+- correlated subqueries are useful to find information for the main query
+- EXISTS operator is more efficient for using on a subquery than IN because it is 
+a boolean operator
+- when using a subquery in the FROM clause, you must use an alias
+	- only use this in simple queries
+	- otherwise, store the subquery in a view
