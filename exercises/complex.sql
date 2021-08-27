@@ -124,7 +124,7 @@ WHERE EXISTS (
 	SELECT client_id
     FROM invoices
     WHERE client_id = c.client_id
-)
+);
 
 -- Find the products that have never been ordered
 
