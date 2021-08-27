@@ -22,7 +22,7 @@
 - use CROSS JOIN to combine e.g. all colors and all sizes
 - use UNION for combining rows with equal number of columns
 
-![Join types](https://github.com/martheveldhuis/SQL_refresh/blob/main/joins.png)
+![Join types](https://github.com/martheveldhuis/SQL_refresh/blob/complex/joins.png)
 
 ## Notes: inserting, updating, and deleting data
 
@@ -36,3 +36,14 @@
 - use HAVING to filter after grouping (WHERE clause would not work)
 - HAVING only works on selected columns
 - ROLLUP only works with the actual column name, not an alias
+
+
+## Notes: complex queries
+
+- you can use both subqueries or joins depending on readability
+- correlated subqueries are useful to find information for the main query
+- EXISTS operator is more efficient for using on a subquery than IN because it is 
+a boolean operator
+- when using a subquery in the FROM clause, you must use an alias
+	- only use this in simple queries
+	- otherwise, store the subquery in a view
