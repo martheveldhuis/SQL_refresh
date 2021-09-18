@@ -47,3 +47,28 @@ a boolean operator
 - when using a subquery in the FROM clause, you must use an alias
 	- only use this in simple queries
 	- otherwise, store the subquery in a view
+
+
+## Notes: views
+
+- a view can be worked upon like a table
+- preferably use CREATE OR REPLACE
+- views are often saved in sql files, named the same as the view
+and put under source control.
+- "updatable views" can be used in INSERT, UPDATE and DELETE statements 
+if they DO NOT include:
+	- DISTINCT
+	- Aggregate functions (MIN, MAX, SUM)
+	- GROUP BY / HAVING
+	- UNION
+- updating views might be necessary if you don't have access to the actual tables
+- updating or deleting from views might remove some rows, to prevent use: 
+	- WITH CHECK OPTION: this will instead give an error
+
+- benefits of views:
+	- simplify queries
+	- reduce impact of changes as it is an abstraction on top of tables
+		- e.g. table column changes, all queries would have to change.
+		- if you write queries against views instead, only the view changes.
+	- restrict access to the data
+		- note that you might want to update the áctual data.
