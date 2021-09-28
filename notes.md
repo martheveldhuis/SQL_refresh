@@ -72,3 +72,22 @@ if they DO NOT include:
 		- if you write queries against views instead, only the view changes.
 	- restrict access to the data
 		- note that you might want to update the áctual data.
+
+## Notes: stored procedures
+
+- do not mix SQL- application code.
+- stored procedure = database object that contains a block of SQL code. (function)
+- code in stored procedures could be executed faster.
+- also increases data security.
+- DELIMITER keyword changes the default delimiter so that a block of code
+can be executed as one. This is required in MySQL.
+- parameters are placeholders in function definitions, 
+arguments are the values you supply.
+- validating paramaters should be minimal, should be in application
+- variables are used often with output parameters
+- local variables are only stored during stored procedures
+- functions, in contrast to stored procedures, can only return a single value.
+- functions must have a, or multiple, attributes 
+	- DETERMINISTIC
+	- READS SQL DATA
+	- MODIFIES SQL DATA
